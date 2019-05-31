@@ -8,4 +8,7 @@ module.exports = {
     browser: true,
   },
   plugins: ['svelte3'],
+  settings: {
+    'svelte3/ignore-styles': true,
+  },
 };

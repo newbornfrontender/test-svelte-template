@@ -24,6 +24,7 @@
     "rollup-plugin-svelte": "5.0.3",
     "rollup-plugin-terser": "4.0.4",
     "sirv-cli": "0.4.2",
+    "stylelint-config-recommended": "^2.2.0",
     "svelte": "3.4.4",
     "svelte-preprocess": "2.11.0"
   },

@@ -8,7 +8,7 @@
   !
 </h1>
 
-<style>
+<style type="text/postcss" lang="postcss">
   h1 {
     color: rgb(0, 60, 128);
 

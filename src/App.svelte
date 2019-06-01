@@ -2,17 +2,17 @@
   export let name;
 </script>
 
-<h1>
+<h1 class="title">
   Hello
-  <span>{name}</span>
+  <span class="text">{name}</span>
   !
 </h1>
 
 <style type="text/postcss" lang="postcss">
-  h1 {
+  .title {
     color: rgb(0, 60, 128);
 
-    & span {
+    & .text {
       color: red;
     }
   }

@@ -3,6 +3,7 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
+  parser: 'babel-eslint',
   env: {
     es6: true,
     browser: true,

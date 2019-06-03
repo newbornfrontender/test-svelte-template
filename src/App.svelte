@@ -1,19 +1,28 @@
 <script>
-  export let name;
+  import { count } from './store';
+
+  import SampleWrapper from './components/SampleWrapper.svelte';
+  import Counter from './components/Counter.svelte';
+  import StoreCounter from './components/StoreCounter/StoreCounter.svelte';
 </script>
 
-<h1 class="title">
-  Hello
-  <span class="text">{name}</span>
-  !
-</h1>
-
-<style type="text/postcss" lang="postcss">
+<style>
   .title {
-    color: rgb(0, 60, 128);
-
-    & .text {
-      color: red;
-    }
+    text-align: center;
+    margin: 30px 0;
   }
 </style>
+
+<section class="container">
+  <h1 class="title">👉 Samples list 👈</h1>
+
+  <div class="wrapper">
+    <SampleWrapper title="Counter">
+      <Counter />
+    </SampleWrapper>
+
+    <SampleWrapper title="Store counter ({$count})">
+      <StoreCounter />
+    </SampleWrapper>
+  </div>
+</section>

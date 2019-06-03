@@ -4,7 +4,6 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import preprocess from 'svelte-preprocess';
 import babel from 'rollup-plugin-babel';
-import replace from 'rollup-plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -29,8 +28,7 @@ export default {
     resolve(),
     babel(),
     !production && livereload('public'),
-    // production && terser(),
-    process.env.NODE_ENV === 'production' && terser(),
+    production && terser(),
   ],
   watch: {
     clearScreen: false,

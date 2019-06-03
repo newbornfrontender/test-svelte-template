@@ -5,11 +5,11 @@ import { terser } from 'rollup-plugin-terser';
 import preprocess from 'svelte-preprocess';
 import babel from 'rollup-plugin-babel';
 
-const production = !process.env.ROLLUP_WATCH;
+const isProd = !process.env.ROLLUP_WATCH;
 
 export default {
   input: 'src/main.js',
-  treeshake: production,
+  treeshake: isProd,
   output: {
     sourcemap: true,
     format: 'esm',
@@ -17,7 +17,7 @@ export default {
   },
   plugins: [
     svelte({
-      dev: !production,
+      dev: !isProd,
       preprocess: preprocess({
         postcss: true,
       }),
@@ -27,8 +27,8 @@ export default {
     }),
     resolve(),
     babel(),
-    !production && livereload('public'),
-    production && terser(),
+    !isProd && livereload('public'),
+    isProd && terser(),
   ],
   watch: {
     clearScreen: false,

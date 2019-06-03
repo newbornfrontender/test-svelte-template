@@ -1,12 +1,12 @@
-const production = !process.env.ROLLUP_WATCH;
+const isProd = !process.env.ROLLUP_WATCH;
 
 module.exports = () => ({
   plugins: {
     'postcss-preset-env': {
       stage: 0,
-      autoprefixer: production,
+      autoprefixer: isProd,
     },
-    'css-mqpacker': production,
-    cssnano: production,
+    'css-mqpacker': isProd,
+    cssnano: isProd,
   },
 });

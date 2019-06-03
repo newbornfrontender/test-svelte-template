@@ -17,9 +17,6 @@ export default {
     file: 'public/bundle.js',
   },
   plugins: [
-    replace({
-      NODE_ENV: production && JSON.stringify('production'),
-    }),
     svelte({
       dev: !production,
       preprocess: preprocess({
@@ -32,7 +29,8 @@ export default {
     resolve(),
     babel(),
     !production && livereload('public'),
-    production && terser(),
+    // production && terser(),
+    process.env.NODE_ENV === 'production' && terser(),
   ],
   watch: {
     clearScreen: false,

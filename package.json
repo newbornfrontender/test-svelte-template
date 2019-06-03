@@ -8,6 +8,7 @@
   "devDependencies": {
     "@babel/core": "7.4.5",
     "@babel/preset-env": "7.4.5",
+    "cross-env": "^5.2.0",
     "css-mqpacker": "7.0.0",
     "cssnano": "4.1.10",
     "eslint": "5.16.0",
@@ -27,16 +28,15 @@
     "stylelint": "10.0.1",
     "stylelint-config-prettier": "5.2.0",
     "stylelint-config-recommended": "2.2.0",
-    "stylelint-prettier": "1.1.1",
     "svelte": "3.4.4",
     "svelte-preprocess": "2.11.0"
   },
   "scripts": {
     "format": "prettier --write --svelte-sort-order scripts-markup-styles ./**/*.{svelte,html,css,js,json,md}",
-    "lint:js": "eslint ./**/*.{svelte,js}",
-    "lint:css": "stylelint ./**/*.{svelte,css}",
+    "lint:js": "eslint --fix ./**/*.{svelte,js}",
+    "lint:css": "stylelint --fix ./**/*.{svelte,css}",
     "lint:css:check": "stylelint-config-prettier-check",
-    "build": "rollup -c",
+    "build": "cross-env NODE_ENV=production rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",

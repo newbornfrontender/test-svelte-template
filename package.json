@@ -34,7 +34,7 @@
   },
   "scripts": {
     "format": "prettier --write --svelte-sort-order scripts-markup-styles ./**/*.{svelte,html,css,js,json,md}",
-    "lint:js": "eslint --fix ./**/*.{svelte,js}",
+    "lint:js": "eslint --fix ./src/**/*.{svelte,js}",
     "lint:js:check": "eslint --print-config . | eslint-config-prettier-check",
     "lint:css": "stylelint --fix ./**/*.{svelte,css}",
     "lint:css:check": "stylelint-config-prettier-check",

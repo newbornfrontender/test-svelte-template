@@ -12,6 +12,7 @@ module.exports = {
     'svelte3/ignore-styles': true,
   },
   extends: [
+    'eslint:recommended',
     'prettier'
   ]
 };

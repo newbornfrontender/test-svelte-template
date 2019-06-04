@@ -5895,10 +5895,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte-preprocess@2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-2.11.0.tgz#405f79a8479916d17e1700c689719a0c64fc339b"
-  integrity sha512-hwIp0ZALTgccXyEEic0B6Xaz4RiZ2LiO5wYs+Kep85M5FFGxX3EkyOCGmL4rksf2n79IymYkhJz/kvlxnKSpXA==
+svelte-preprocess@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-2.12.0.tgz#c18e57a9c3cf417727a907ee573266c50b04e88f"
+  integrity sha512-JQByQ1jl1AlDwAWGsVfnB1CrJkf6cYW6lebrSqynQQLp2RGxlcTCeaHeNRwsFqq4Pqlz58A928YwcvLYjokSaA==
   dependencies:
     postcss-load-config "^2.0.0"
     strip-indent "^2.0.0"

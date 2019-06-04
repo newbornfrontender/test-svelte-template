@@ -28,7 +28,10 @@ export default {
     resolve(),
     babel(),
     !isProd && livereload('public'),
-    isProd && terser(),
+    isProd &&
+      terser({
+        module: true,
+      }),
   ],
   watch: {
     clearScreen: false,

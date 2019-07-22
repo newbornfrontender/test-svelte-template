@@ -5061,10 +5061,10 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier-plugin-svelte@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-0.6.0.tgz#5339a7e831b23b8531396d3c588f96f6c74b85a4"
-  integrity sha512-F0JjRXJuOt090nCMrDN33hll3+kymaeAXWm8MNOhtzKSQDvgKP1if80kgKNHXlyp01+CJI9/08ZPHkekesitlQ==
+prettier-plugin-svelte@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-0.7.0.tgz#5ac0b9f194e0450c88ff1e167cbf3b32d2642df2"
+  integrity sha512-SuZSeMh48rx42kCFEpI/xE1XgjxQcS3r22Yo7jIhBYRhwbAa8laNxiIHsfeWWkX8BdyELkEayaTQp4ricckwTQ==
   dependencies:
     tslib "^1.9.3"
 

@@ -6069,10 +6069,10 @@ svelte-preprocess@2.12.0:
     postcss-load-config "^2.0.0"
     strip-indent "^2.0.0"
 
-svelte@3.6.11:
-  version "3.6.11"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.6.11.tgz#1ad6638d629ff8f280639687aef0a6a659f09802"
-  integrity sha512-pm8k34grr20MaL0+Tx2m7rxJ0MP6mqj0FxWcTWuOc6TR6TYLq5251shgfhVpy5n7NQUGyp2VqiBAGdSodWmvtg==
+svelte@3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.7.0.tgz#242030f8862c7200264f8e67df611a101fa87727"
+  integrity sha512-Qp5qxdYghSwXADCdaTLmL4gDUzhSfi6X7oWDJaEGJQXkCn1a8zxIBDJe2oQS6oHQzZqwvcppPqIoOySNLRw34w==
 
 svg-tags@^1.0.0:
   version "1.0.0"

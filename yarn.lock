@@ -2001,6 +2001,11 @@ delegates@^1.0.0:
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
+detect-indent@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.0.0.tgz#0abd0f549f69fc6659a254fe96786186b6f528fd"
+  integrity sha512-oSyFlqaTHCItVRGK5RmrmjB+CmaMOW7IaNA/kdxqhoa6d17j/5ce9O9eWXmV/KEdRwqpQA+Vqe8a8Bsybu4YnA==
+
 detect-libc@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
@@ -6061,11 +6066,12 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte-preprocess@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-2.12.0.tgz#c18e57a9c3cf417727a907ee573266c50b04e88f"
-  integrity sha512-JQByQ1jl1AlDwAWGsVfnB1CrJkf6cYW6lebrSqynQQLp2RGxlcTCeaHeNRwsFqq4Pqlz58A928YwcvLYjokSaA==
+svelte-preprocess@2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-2.16.0.tgz#1e4c0720809c11738df5763752fbb5131948d994"
+  integrity sha512-RVN/q/SOVCy4QxZeCEUXczYP/OxOT7LN6wo8RKL0rn9BUYe5/oGSn8p8eRiOGgcE3vWZRPQkHwpDC+AKSzlWyA==
   dependencies:
+    detect-indent "^6.0.0"
     postcss-load-config "^2.0.0"
     strip-indent "^2.0.0"
 

@@ -33,7 +33,7 @@
     "sirv-cli": "0.4.4",
     "stylelint": "10.1.0",
     "stylelint-config-prettier": "5.2.0",
-    "stylelint-config-standard": "18.3.0",
+    "stylelint-config-standard": "19.0.0",
     "svelte": "3.7.1",
     "svelte-preprocess": "2.12.0"
   },
